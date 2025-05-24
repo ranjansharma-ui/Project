@@ -9,4 +9,11 @@ export default defineConfig({
     react()
 
   ],
+  theme: {
+    extend: {
+      colors:{
+        'primary':"#5f6FFF"
+      }
+    }
+  }
 })
