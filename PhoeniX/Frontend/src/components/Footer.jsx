@@ -3,19 +3,19 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div className='md'>
-      <div>
+    <div className='md:mx-10'>
+      <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
         {/* -----Left Section------- */}
         <div>
-            <img src={assets.logo} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, id.</p>
+            <img className='mb-5 w-55 ' src="https://www.bsfms.com/wp-content/uploads/2022/12/11-removebg-preview.png" alt="" />
+            <p className='w-full md:w-2/3 text-gray-600 leading-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, id.</p>
 
         </div>
 
         {/* ----Center Section------ */}
         <div>
-            <p>COMPANY</p>
-            <ul>
+            <p className='text-xl font-medium mb-5'>COMPANY</p>
+            <ul className='flex flex-col gap-2 text-gray-600'>
                 <li>Home</li>
                 <li>About us</li>
                 <li>Contact us</li>
@@ -26,8 +26,8 @@ const Footer = () => {
 
         {/* -----Right Section------- */}
         <div>
-            <p>GET IN TOUCH</p>
-            <ul>
+            <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+            <ul className='flex flex-col gap-2 text-gray-600'>
                 <li>98979-9988-89</li>
                 <li>grsfjejf@gmail.com</li>
             </ul>
@@ -39,7 +39,7 @@ const Footer = () => {
       {/* --------Copyright Text */}
       <div>
         <hr />
-        <p> Copyright 2025@ PhoeniX All Right Reserved </p>
+        <p className='py-5 text-sm text-center'> Copyright 2025@ PhoeniX All Right Reserved </p>
       </div>
 
     </div>
